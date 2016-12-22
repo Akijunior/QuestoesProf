@@ -1,6 +1,11 @@
 package Application;
 
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
 public class ExercicioX {
+	
 	public static void main(String[] args) {
 		
 		for(int i=150; i < 301; i++) {
@@ -30,6 +35,34 @@ public class ExercicioX {
 			System.out.printf("O valor do fatorial %d é igual a %d.\n", n, fat);
 			fat = 0;
 		}
+		
+		int inicio = 0, meio = 1, fib = 0;
+		System.out.println("Fibbonacci: 0.");
+		while (fib < 100) {
+			
+			System.out.println("Fibbonacci: " + meio + ".");
+			fib = inicio + meio;
+			inicio = meio;
+			meio = fib;
+		}
+		System.out.println("Fibbonacci: " + meio + ".");
+		
+		Scanner pontoDePartida = new Scanner(System.in);
+		double caixaDeEntrada = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor a ser submetido: "));
+		
+		while(caixaDeEntrada != 1) {
+			if (caixaDeEntrada%2==0) {
+				caixaDeEntrada = caixaDeEntrada/2;
+			}
+			
+			else if (caixaDeEntrada%2!=0) {
+				caixaDeEntrada = 3 * caixaDeEntrada + 1;
+			}
+			System.out.println(caixaDeEntrada);
+		}
+	}
+
+		
 	}
 	
-}
+
