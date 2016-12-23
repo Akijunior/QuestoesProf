@@ -1,0 +1,16 @@
+
+1 -> a) Sun. b) Modificadores de Acesso. c) Static. d) Public.
+2 -> D. Class.
+3 -> B.
+4 -> A vantagem se deve ao fato que um programa escrito em uma linguagem multiplataforma poderá ser executado nos mais variados sistemas.
+5 -> D.
+6 -> C.
+7 -> Bytecode.
+8 ->
+  public class Test2 {
+	public static void main(String[] args) {
+		System.out.println("Ensino didático Java 8, uma maneira fácil e gostosa de aprender.");
+	}
+}
+9 -> Traduzir os comandos para o PC.
+10 -> B.
